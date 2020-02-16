@@ -1,3 +1,3 @@
 origin file
 
-branch2에서 추가
+branch2에서 수정함
