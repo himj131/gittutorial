@@ -94,7 +94,12 @@
     
 
 ### 브랜치 관련
-- `git checkout 커밋아이디` 
+- `git branch` : 브랜치 목록 보기
+    - `git branch -v` : 브랜치 목록과 각 브랜치 마지막 커밋도 함께 보기
+    - `git branch [-f] newbranch` : newbranch  라는 신규 브랜치 생  
+    - `git branch -r[v]` : 원격 저장소에 있는 브랜치 보기 (v 옵션시 마지막 커밋 함께 보기) 
+- `git checkout 브랜치명` : 특정 브랜치가 가르키고 있는 커밋의 내용을 워킹트리에 반영하기
+- `git checkut 커밋아이디` 
     - 해당커밋 아이디의 커밋상태로 코드를 되돌린다.
 - `git checkout -` 
     - 직전 커밋 상태의 코드로 되돌리기
@@ -108,5 +113,5 @@
     - 예) git help commit
 
 - `git status`
-    - git 상태보기
+    - git 상태보기햣 ㅎㅎ
     - `git status -s` : 짧게 요약해서 상태를 보여줌, 변경된 파일이 많을 때 유용하다.
