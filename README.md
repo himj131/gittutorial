@@ -95,11 +95,14 @@
 ### 브랜치 관련
 - `git branch` : 브랜치 목록 보기
     - `git branch -v` : 브랜치 목록과 각 브랜치 마지막 커밋도 함께 보기
-    - `git branch [-f] newbranch` : newbranch  라는 신규 브랜치 생  
-    - `git branch -r[v]` : 원격 저장소에 있는 브랜치 보기 (v 옵션시 마지막 커밋 함께 보기) 
+    - `git branch [-f] newbranch` : newbranch라는 이름의 신규 브랜치 생성
+    - `git branch -r[v]` : 원격 저장소에 있는 브랜치 보기 (v 옵션시 마지막 커밋 함께 보기)
+    - `git branch -d 브랜치명` : 브랜치 삭 
 - `git checkout 브랜치명` : 특정 브랜치가 가르키고 있는 커밋의 내용을 워킹트리에 반영하기
-- `git checkut 커밋아이디` 
+- `git checkout 커밋아이디` 
     - 해당커밋 아이디의 커밋상태로 코드를 되돌린다.
+    - HEAD와 브랜치가 분리되는 Detached HEAD 상황이 되어 Detached HEAD의 커밋들은 안보이게 된다.(git checkout 브랜치명 으로 해결가능)
+    - 이 방법보다는 브랜치명으로 checkout 하는것을 권장하고 있다.
 - `git checkout -` 
     - 직전 커밋 상태의 코드로 되돌리기
 - `git remote add origin https://github.com/himj131/gittutorial.git` 
@@ -107,6 +110,10 @@
     - 원격저장소의 이름은 origin이 된다.(origin은 다른 이름으로 변경 가능)
 - `git remote -v` : 원격 저장소 목록 확인
 
+### 태깅
+- `git tag -a -m 메세지 태그이름 [브랜치 또는 체크섬]` : -a 로 주석있는 태그 생성. 브랜치이름을 생략하면 HEAD에 태그를 생성한다.
+
+### 기타
 - `git help <명령어>` 
     - 해당 명령어의 도움말을 표시한다.
     - 예) git help commit
