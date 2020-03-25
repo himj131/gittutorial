@@ -98,8 +98,10 @@
     - `git branch -v` : 브랜치 목록과 각 브랜치 마지막 커밋도 함께 보기
     - `git branch [-f] newbranch` : newbranch라는 이름의 신규 브랜치 생성
     - `git branch -r[v]` : 원격 저장소에 있는 브랜치 보기 (v 옵션시 마지막 커밋 함께 보기)
-    - `git branch -d 브랜치명` : 브랜치 삭 
-- `git checkout 브랜치명` : 특정 브랜치가 가르키고 있는 커밋의 내용을 워킹트리에 반영하기
+    - `git branch -d 브랜치명` : 브랜치 삭제
+- `git checkout 브랜치명` : 특정 브랜치가 가르키고 있는 커밋의 내용을 워킹트리에 반영하기제
+    - `git checkout -b 브랜치명` : 브랜치명 이라는 이름의 새로운 브랜치를 만들고 checkout
+    - ` git checkout -b hotfix master` : master 브랜치로부터 hotfix 브랜치를 생성하
 - `git checkout 커밋아이디` 
     - 해당커밋 아이디의 커밋상태로 코드를 되돌린다.
     - HEAD와 브랜치가 분리되는 Detached HEAD 상황이 되어 Detached HEAD의 커밋들은 안보이게 된다.(git checkout 브랜치명 으로 해결가능)
@@ -124,4 +126,4 @@
 
 - `git status`
     - git 상태보기햣 ㅎㅎ
-    - `git status -s` : 짧게 요약해서 상태를 보여줌, 변경된 파일이 많을 때 유용하다.
+    - `git status -s` : 짧게 요약해서 상태를 보여줌,햣 이 많을 때 유용하다.
