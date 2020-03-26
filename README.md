@@ -92,7 +92,10 @@
     - 원격 저장소에 있는 프로젝트를 폴더명에 내려받기
     - 폴더명에 해당하는 폴더가 없는경우 새로 생성된다.
     
-
+#### rebase
+- `git rebase origin/master` : 로컬 master 브랜치의 가지 커밋이 origin/master 브랜치 위로 재배치 된다.
+- `git rebase --continue` : 리베이스 계속 진행 
+    
 ### 브랜치 관련
 - `git branch` : 브랜치 목록 보기
     - `git branch -v` : 브랜치 목록과 각 브랜치 마지막 커밋도 함께 보기
